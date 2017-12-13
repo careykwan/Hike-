@@ -1,0 +1,15 @@
+//Psuedo code plan
+
+1. when amount of people selected, do if else or switch to show the accomodation type available for the amount of people and store to array.
+2. When type of accomodation is selected store in to array and grab data from object
+3. When meal option is selected store to array and grab data from object for price
+4. select dates, calculate stay and store in array
+5. when submit button is clicked - generated info into x4 cards
+6. When use selects accomodation, is shows in next div
+8. total calculations are shown in big div also
+7. visit website button is clicked - taken to website.
+
+
+- need to also do if else statements for min and max amount of stay
+
+- need to code marker to show on click and hide

@@ -1,0 +1,22 @@
+@import "utilities/variables";
+
+@mixin myContainer {
+	background-color: $background-color;
+	margin: 0 auto;
+	position: relative; }
+
+@mixin headings {
+	color: $heading-color;
+	font-family: 'Amatic SC', cursive;
+	font-size: $heading-size;
+}
+
+@mixin box {
+	width: 630px;
+	height: 650px;
+	border: 1px solid black;
+	margin-top: 20px;
+	position: absolute;
+		left: 350px;
+		top: 45px;
+}
