@@ -506,4 +506,16 @@ ul {
 
 }
 
+@media only screen and (min-width: 1024px) {
+
+  #enterSite {
+  float: right;
+  margin-right: 100px; }
+
+  .box {
+  position: absolute;
+  left: 850px;
+  top: 100px; }
+
+
 /*# sourceMappingURL=style.css.map */
