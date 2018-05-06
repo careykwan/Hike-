@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Hike & Hut</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -21,13 +20,21 @@
 </head>
 <body>
 	<!-- This is my splash page -->
+
+	<div class="mobile">
+		<h1 class="error">Oops!<br> Please resize your device.</h1>
+	</div>
+	
 	<div id="main" class="my-container-a">
 
-		<img class="logo" src="images/logo.png" alt="Logo">
+		<img class="logo" src="images/coverLogo.svg" alt="Logo">
 
 		<h1 class="title">DISCOVER GREAT NZ HIKES AND FIND THE NEAREST ACCOMODATION</h1>
 
-		<i id="enterSite" class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
+		<button class="enter" id="enterSite" >Find Accomodation</button>
+		
+		<!-- <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i> -->
+
 		
 	</div> 
 	<!-- This is the end div for the splash page -->	
@@ -37,7 +44,7 @@
 		<!-- this is the map plug in  -->
 		<div id="map"></div>
 			<!-- This is the logo that sits in the corner -->
-			<img id="logoS" src="images/logoSmall.png" alt="LogoSmall">
+			<img class="smallLogo" id="logoS" src="images/logoSmall.png" alt="LogoSmall">
 
 				<!-- this is the div for my main components -->
 			<div id="stepOne" class="box">
