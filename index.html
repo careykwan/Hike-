@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Hike & Hut</title>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="icon.png" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-	<!-- links for materialize -->
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.css"/>
-	<!-- links for mapBox -->
-	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet'/>
+    <title>Hike & Hut</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- links for materialize -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.css" />
+    <!-- links for mapBox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
     <!-- links for font awesome -->
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 </head>
+
 <body>
-	<!-- This is my splash page -->
+    <!-- This is my splash page -->
 
-	<div class="mobile">
-		<h1 class="error">Oops!<br> Please resize your device.</h1>
-	</div>
-	
-	<div id="main" class="my-container-a">
+    <div class="mobile">
+        <h1 class="error">Oops!<br> Please resize your device.</h1>
+    </div>
 
-		<img class="logo" src="images/coverLogo.svg" alt="Logo">
+    <div id="main" class="my-container-a">
 
-		<h1 class="title">DISCOVER GREAT NZ HIKES AND FIND THE NEAREST ACCOMODATION</h1>
+        <img class="logo" src="images/coverLogo.svg" alt="Logo">
 
-		<button class="enter" id="enterSite" >Find Accomodation</button>
-		
-		<!-- <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i> -->
+        <h1 class="title">DISCOVER GREAT NZ HIKES AND FIND THE NEAREST ACCOMODATION</h1>
 
-		
-	</div> 
-	<!-- This is the end div for the splash page -->	
+        <button class="enter" id="enterSite">Find Accomodation</button>
 
-	<!-- This is the start of the website -->
-	<div id="sideNavigation" class="my-container-b">
-		<!-- this is the map plug in  -->
-		<div id="map"></div>
-			<!-- This is the logo that sits in the corner -->
-			<img class="smallLogo" id="logoS" src="images/logoSmall.png" alt="LogoSmall">
+        <!-- <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i> -->
 
-				<!-- this is the div for my main components -->
-			<div id="stepOne" class="box">
-				
-				<h2 class="my-headings">CHOOSE A HIKE</h2>
-				<!-- div around the cards -->
-				<div id="inner">
 
-					<div id="card1" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img class="activator" src="images/crossing.jpg" alt="Alpine crossing">
-					  	</div>
-					    <div class="card-content">
-					      <span id="titleText1" class="card-title activator grey-text text-darken-4">Tongariro
+    </div>
+    <!-- This is the end div for the splash page -->
+
+    <!-- This is the start of the website -->
+    <div id="sideNavigation" class="my-container-b">
+        <!-- this is the map plug in  -->
+        <div id="map"></div>
+        <!-- This is the logo that sits in the corner -->
+        <img class="smallLogo" id="logoS" src="images/logoSmall.png" alt="LogoSmall">
+
+        <!-- this is the div for my main components -->
+        <div id="stepOne" class="box">
+
+            <h2 class="my-headings">CHOOSE A HIKE</h2>
+            <!-- div around the cards -->
+            <div id="inner">
+
+                <div id="card1" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/crossing.jpg" alt="Alpine crossing">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText1" class="card-title activator grey-text text-darken-4">Tongariro
 						      	<button id="firstHike" class="hike-button btn-flat" value="alpine">
 						      		<i class="large material-icons">add_circle</i>
 						      	</button>
@@ -66,23 +68,23 @@
 						      		<i id="showPin" class="show-more material-icons right">more_vert</i>
 						      	</button>
 					      </span>
-					  	</div>
-					    <div class="card-reveal">
-					      	<span class="card-title grey-text text-darken-4">
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
 					      		<i class="material-icons right">close</i>
 					     	</span>
-							<p>Trek across a volcanic alpine landscape of dramatic contrasts – steaming vents, glacial valleys, ancient lava flows, alpine vegetation and vivid crater lakes, all with stunning views.</p>
-							<i class="material-icons right">directions_walk</i>
-					      	<p class="hours">3-4 days</p>
-						</div>
-					 </div>
-					
-					 <div id="card2First" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img class="activator" src="images/abel.jpg" alt="Abel Tasman">
-					  	</div>
-						<div class="card-content">
-						    <span id="titleText2" class="card-title activator grey-text text-darken-4">Abel Tasman
+                        <p>Trek across a volcanic alpine landscape of dramatic contrasts – steaming vents, glacial valleys, ancient lava flows, alpine vegetation and vivid crater lakes, all with stunning views.</p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="hours">3-4 days</p>
+                    </div>
+                </div>
+
+                <div id="card2First" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/abel.jpg" alt="Abel Tasman">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText2" class="card-title activator grey-text text-darken-4">Abel Tasman
 							    <button id="secondHike" class="hike-button btn-flat" value="tasman">
 							    	<i class="small material-icons">add_circle</i>
 							    </button>
@@ -90,23 +92,23 @@
 							    	<i class="show-more material-icons right">more_vert</i>
 							    </button>
 						    </span>
-						</div>
-						<div class="card-reveal">
-						    <span class="card-title grey-text text-darken-4">
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
 						    	<i class="material-icons right">close</i>
 						    </span>
-							<p>Blessed with a mild climate, golden beaches and lush coastal native bush, the Abel Tasman Coast Track has it all.</p>
-							<i class="material-icons right">directions_walk</i>
-					      	<p class="hours">3-5 days</p>
-						</div>
-					 </div>
-				
-					<div id="card3Again" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					     <img class="activator" src="images/milford.jpg" alt="Milford Tract">
-					 	</div>
-					    <div class="card-content">
-					      	<span id="titleText3" class="card-title activator grey-text text-darken-4">Milford Track
+                        <p>Blessed with a mild climate, golden beaches and lush coastal native bush, the Abel Tasman Coast Track has it all.</p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="hours">3-5 days</p>
+                    </div>
+                </div>
+
+                <div id="card3Again" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/milford.jpg" alt="Milford Tract">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText3" class="card-title activator grey-text text-darken-4">Milford Track
 					      		<button id="thirdHike" class="hike-button btn-flat" value="milford">
 					      			<i class="small material-icons">add_circle</i>
 					      		</button>
@@ -114,23 +116,23 @@
 					      			<i class="show-more material-icons right">more_vert</i>
 					      		</button>
 					      	</span>
-					  	</div>
-					    <div class="card-reveal">
-					      <span class="card-title grey-text text-darken-4">
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
 					      	<i class="material-icons right">close</i>
 					      </span>
-					      <p>Experience 'the finest walk in the world' as you retrace the steps of early explorers on the world-renowed Milford Track.</p>
-					      <i class="material-icons right">directions_walk</i>
-					      <p class="hours">4 days</p>
-						</div>
-					</div>
+                        <p>Experience 'the finest walk in the world' as you retrace the steps of early explorers on the world-renowed Milford Track.</p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="hours">4 days</p>
+                    </div>
+                </div>
 
-					<div id="card4Again" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img class="activator" src="images/heaphy.jpg" alt="heaphy Track">
-						</div>
-					    <div class="card-content">
-						      <span id="titleText4" class="card-title activator grey-text text-darken-4">Heaphy Track
+                <div id="card4Again" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/heaphy.jpg" alt="heaphy Track">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText4" class="card-title activator grey-text text-darken-4">Heaphy Track
 						      	<button id="fourthHike" class="hike-button btn-flat" value="heaphy">
 						      		<i class="small material-icons">add_circle</i>
 						      	</button>
@@ -138,30 +140,32 @@
 						      		<i class="show-more material-icons right">more_vert</i>
 						      	</button>
 						      </span>
-						  	</div>
-						    <div class="card-reveal">
-						      <span class="card-title grey-text text-darken-4">
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
 						      	<i class="material-icons right">close</i>
 						      </span>
-						      <p>Travel through expansive tussock downs, lush forests and nīkau palms to the roaring seas of the West Coast.</p>
-					      	<i class="material-icons right">directions_walk</i>
-					     	<p class="hours">4-6 days</p>
-						</div>
-					  </div>
-				</div> <!-- This is the end for inner -->
-			</div> <!-- This is the end of the box div -->
-			
-			<!-- This is the step two of box -->
-			<div id="stepTwo" class="box">
-						
-				<h2 id="headingsTwo" class="my-headings">FIND YOUR ACCOMADATION</h2>
-				<!-- div around the inputs -->
-				<div id="inner2">
-					<div id="form">
-						<form id="demo-form" data-parsley-validate="">
+                        <p>Travel through expansive tussock downs, lush forests and nīkau palms to the roaring seas of the West Coast.</p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="hours">4-6 days</p>
+                    </div>
+                </div>
+            </div>
+            <!-- This is the end for inner -->
+        </div>
+        <!-- This is the end of the box div -->
 
-								<label class="small-head">Number of people</label>
-								 <select id="pax" class="browser-default" required="">
+        <!-- This is the step two of box -->
+        <div id="stepTwo" class="box">
+
+            <h2 id="headingsTwo" class="my-headings">FIND YOUR ACCOMADATION</h2>
+            <!-- div around the inputs -->
+            <div id="inner2">
+                <div id="form">
+                    <form id="demo-form" data-parsley-validate="">
+
+                        <label class="small-head">Number of people</label>
+                        <select id="pax" class="browser-default" required="">
 								    <option value="">0</option>
 								    <option value="val1">1</option>
 								    <option value="val2">2</option>
@@ -171,189 +175,196 @@
 								    <option value="val6">6</option>
 							    </select>
 
-								
-								<label class="small-head">Accomodation Type</label>
-								  <select id="accomodation" class="browser-default" required="">
+
+                        <label class="small-head">Accomodation Type</label>
+                        <select id="accomodation" class="browser-default" required="">
 								  <option value="">Choose an option</option>
 								  <option value="tent">Tent (min 1 night, max 5 nights)</option>
 								  <option value="hut">Hut (min 1 night, max 10 nights)</option>
 								  <option value="motel">Motel (min 3 nights, max 10 nights)</option>
 								  <option value="house">House (min 2 nights, max 15 nights)</option>
 								</select>
-							 	
-								 <label class="small-head">Meal options</label>
-								 <select id="meals" class="browser-default" required="">
+
+                        <label class="small-head">Meal options</label>
+                        <select id="meals" class="browser-default" required="">
 								    <option value="">Choose an option</option>
 								    <option value="breakfast">Breakfast $15 per day</option>
 								    <option value="lunch">Lunch $35 per day</option>
 								    <option value="dinner">Dinner $50 per day</option>
 								    <option value="all">All meals $90 per day</option>
 								 </select>
-								
-								<p class="date">Staying From:</p>
-								 <input id="calFrom" type="text" class="datepicker" required="">
-								
-								<p class="date">Staying To:</p>
-								 <input id="calTo" type="text" class="datepicker" required="">
 
-								 <div id="modal" class="pop-up">
-								 	<h4 class="pop-text">Please enter correct dates!</h4>
-								 	<button class="close btn-flat" id="modalClose">
+                        <p class="date">Staying From:</p>
+                        <input id="calFrom" type="text" class="datepicker" required="">
+
+                        <p class="date">Staying To:</p>
+                        <input id="calTo" type="text" class="datepicker" required="">
+
+                        <div id="modal" class="pop-up">
+                            <h4 class="pop-text">Please enter correct dates!</h4>
+                            <button class="close btn-flat" id="modalClose">
 								 		<i class="close-button fa fa-times" aria-hidden="true"></i>
 								 	</button>
-								 </div>
+                        </div>
 
-								<div id="line">
-								  	<i id="backSpace" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-								  	<p id="prev">Previous</p>
-									<button id="check" class="waves-effect waves-light btn modal-trigger" value="validate">Check Availability</button>
-								</div>
-						</form>	
-					</div>
-				</div> <!-- This is the end for inner -->
-			</div> <!-- This is the end of the box div -->
+                        <div id="line">
+                            <i id="backSpace" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                            <p id="prev">Previous</p>
+                            <button id="check" class="waves-effect waves-light btn modal-trigger" value="validate">Check Availability</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- This is the end for inner -->
+        </div>
+        <!-- This is the end of the box div -->
 
-			<!-- This is the step three of box -->
-			<!-- this is the div for my main components -->
-			<div id="stepThree" class="box">
-				
-				<h2 id="headingsThree" class="my-headings">SELECT YOUR ACCOMODATION</h2>
-				<!-- div around the cards -->
-				<div id="inner3">
+        <!-- This is the step three of box -->
+        <!-- this is the div for my main components -->
+        <div id="stepThree" class="box">
 
-					<div id="card10" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img id="imageFirst" class="activator" src="images/milford/hut.jpg" alt="Hut photo 1">
-					  	</div>
-					    <div class="card-content">
-					      <span id="titleText5" class="card-title activator grey-text text-darken-4">Katikahi Farm<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
-					  	</div>
-					    <div class="card-reveal">
-					      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-							<p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
-							<i class="material-icons right">hotel</i>
-					      	<p class="costs"></p>
-					      	<i class="material-icons right">face</i>
-					      	<p class="sleeps"></p>
-					      	<i class="material-icons right">brightness_3</i>
-					      	<p class="days"></p>
-					      	<i class="material-icons right">directions_walk</i>
-					      	<p class="display-hike trail"></p>
-						</div>
-					 </div>
-					
-					 <div id="card2" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img id="imageSecond" class="activator" src="images/milford/tent.jpg" alt="tent photo">
-					  	</div>
-						<div class="card-content">
-						    <span id="titleText6" class="card-title activator grey-text text-darken-4">Kanuku<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
-						</div>
-						<div class="card-reveal">
-						    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-							<p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
-							<i class="material-icons right">hotel</i>
-					      	<p class="costs"></p>
-					      	<i class="material-icons right">face</i>
-					      	<p class="sleeps"></p>
-					      	<i class="material-icons right">brightness_3</i>
-					      	<p class="days"></p>
-					      	<i class="material-icons right">directions_walk</i>
-					      	<p class="display-hike trail"></p>
-						</div>
-					 </div>
-				
-					<div id="card3" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					     <img id="imageThird" class="activator" src="images/milford/house.jpg" alt="house photo">
-					 	</div>
-					    <div class="card-content">
-					      <span id="titleText7" class="card-title activator grey-text text-darken-4">Te Rata<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
-					  	</div>
-					    <div class="card-reveal">
-					      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
-					      <i class="material-icons right">hotel</i>
-					      <p class="costs"></p>
-					      <i class="material-icons right">face</i>
-					      <p class="sleeps"></p>
-					      <i class="material-icons right">brightness_3</i>
-					      <p class="days"></p>
-					      <i class="material-icons right">directions_walk</i>
-					      <p class="display-hike trail"></p>
-						</div>
-					</div>
+            <h2 id="headingsThree" class="my-headings">SELECT YOUR ACCOMODATION</h2>
+            <!-- div around the cards -->
+            <div id="inner3">
 
-					<div id="card4" class="card">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img id="imageFourth" class="activator" src="images/milford/motel.jpg" alt="motel photo">
-						</div>
-					    <div class="card-content">
-					      <span id="titleText8" class="card-title activator grey-text text-darken-4">River Retreat<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
-					  	</div>
-					    <div class="card-reveal">
-					      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
-					      <i class="material-icons right">hotel</i>
-					      <p class="costs"></p>
-					      <i class="material-icons right">face</i>
-					      <p class="sleeps"></p>
-					      <i class="material-icons right">brightness_3</i>
-					      <p class="days"></p>
-					      <i class="material-icons right">directions_walk</i>
-					      <p class="display-hike trail"></p>
-						</div>
-					</div>
+                <div id="card10" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageFirst" class="activator" src="images/milford/hut.jpg" alt="Hut photo 1">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText5" class="card-title activator grey-text text-darken-4">Katikahi Farm<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                        <p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
+                        <i class="material-icons right">hotel</i>
+                        <p class="costs"></p>
+                        <i class="material-icons right">face</i>
+                        <p class="sleeps"></p>
+                        <i class="material-icons right">brightness_3</i>
+                        <p class="days"></p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="display-hike trail"></p>
+                    </div>
+                </div>
 
-					<div id="lineBack">
-						<i id="backSpaceTwo" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-						<p id="prevTwo">Previous</p>
-					</div>
-				</div> <!-- This is the end for inner -->
-			</div> <!-- This is the end of the box div -->
+                <div id="card2" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageSecond" class="activator" src="images/milford/tent.jpg" alt="tent photo">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText6" class="card-title activator grey-text text-darken-4">Kanuku<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                        <p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
+                        <i class="material-icons right">hotel</i>
+                        <p class="costs"></p>
+                        <i class="material-icons right">face</i>
+                        <p class="sleeps"></p>
+                        <i class="material-icons right">brightness_3</i>
+                        <p class="days"></p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="display-hike trail"></p>
+                    </div>
+                </div>
 
-				<!-- This is the step four of box -->
-			<!-- this is the div for my main components -->
-			<div id="stepFour" class="box">
-				<!-- div around the cards -->
-				<div id="inner4">
-					<img id="finalBox" class="image-box" src="images/house-one.jpg" alt="house">
+                <div id="card3" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageThird" class="activator" src="images/milford/house.jpg" alt="house photo">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText7" class="card-title activator grey-text text-darken-4">Te Rata<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                        <p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
+                        <i class="material-icons right">hotel</i>
+                        <p class="costs"></p>
+                        <i class="material-icons right">face</i>
+                        <p class="sleeps"></p>
+                        <i class="material-icons right">brightness_3</i>
+                        <p class="days"></p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="display-hike trail"></p>
+                    </div>
+                </div>
 
-					<h3 id="displayHeading" class="last-heading">Rabbit Island</h3>
+                <div id="card4" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageFourth" class="activator" src="images/milford/motel.jpg" alt="motel photo">
+                    </div>
+                    <div class="card-content">
+                        <span id="titleText8" class="card-title activator grey-text text-darken-4">River Retreat<i class="add-place small material-icons">add_circle</i><i class="show-more material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                        <p>The luxury tent is perfectly positioned on the top of a small hill, with dreamy views out over bushland to the ocean and islands beyond.</p>
+                        <i class="material-icons right">hotel</i>
+                        <p class="costs"></p>
+                        <i class="material-icons right">face</i>
+                        <p class="sleeps"></p>
+                        <i class="material-icons right">brightness_3</i>
+                        <p class="days"></p>
+                        <i class="material-icons right">directions_walk</i>
+                        <p class="display-hike trail"></p>
+                    </div>
+                </div>
 
-					<h4 class="total-cost">Total $567 NZD</h4>
-					
-					<div class="icon-box">
-						<i id="face" class="material-icons">face</i>
-					    <p id="displayNights" class="detail-last-people"></p>
-						 <i id="moon" class="material-icons">brightness_3</i>
-					    <p class="detail-last-house"></p>
-					    <i id="hotel" class="material-icons">local_dining</i>
-						<p id="mealType" class="detail-last">Breakfast option</p>
-					    
-					</div>
+                <div id="lineBack">
+                    <i id="backSpaceTwo" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                    <p id="prevTwo">Previous</p>
+                </div>
+            </div>
+            <!-- This is the end for inner -->
+        </div>
+        <!-- This is the end of the box div -->
 
-					<p class="about-stay">A stay on Slipper Island is a unique opportunity to enjoy a secluded slice of kiwi island paradise. The stylishly decorated, two room luxury tents are set just a few steps from a beautiful, white sand beach. Both are situated to enjoy sensational views over the ocean and back toward the hills of the Coromandel Peninsula.</p>
-					
-					<div id="lineBackTwo">
-						<i id="backSpaceThree" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-						<p id="prevThree">Previous</p>
-					
-						<a id="finalBook" class="waves-effect waves-light btn" href="http://www.canopycamping.co.nz/">Visit Website</a>
-					
-					</div>
-				</div> <!-- This is the end for inner -->
-			</div> <!-- This is the end of the box div -->
-	<!-- this is the end div for the container	 -->	
-	</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-<script src="js/object.js"></script>
-<script src="js/map-js.js"></script>
-<script src="js/materialize-js.js"></script>
-<script src="js/parsley.js"></script>
-<script src="js/custom.js"></script>
+        <!-- This is the step four of box -->
+        <!-- this is the div for my main components -->
+        <div id="stepFour" class="box">
+            <!-- div around the cards -->
+            <div id="inner4">
+                <img id="finalBox" class="image-box" src="images/house-one.jpg" alt="house">
+
+                <h3 id="displayHeading" class="last-heading">Rabbit Island</h3>
+
+                <h4 class="total-cost">Total $567 NZD</h4>
+
+                <div class="icon-box">
+                    <i id="face" class="material-icons">face</i>
+                    <p id="displayNights" class="detail-last-people"></p>
+                    <i id="moon" class="material-icons">brightness_3</i>
+                    <p class="detail-last-house"></p>
+                    <i id="hotel" class="material-icons">local_dining</i>
+                    <p id="mealType" class="detail-last">Breakfast option</p>
+
+                </div>
+
+                <p class="about-stay">A stay on Slipper Island is a unique opportunity to enjoy a secluded slice of kiwi island paradise. The stylishly decorated, two room luxury tents are set just a few steps from a beautiful, white sand beach. Both are situated to enjoy
+                    sensational views over the ocean and back toward the hills of the Coromandel Peninsula.</p>
+
+                <div id="lineBackTwo">
+                    <i id="backSpaceThree" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                    <p id="prevThree">Previous</p>
+
+                    <a id="finalBook" class="waves-effect waves-light btn" href="http://www.canopycamping.co.nz/">Visit Website</a>
+
+                </div>
+            </div>
+            <!-- This is the end for inner -->
+        </div>
+        <!-- This is the end of the box div -->
+        <!-- this is the end div for the container	 -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <script src="js/object.js"></script>
+    <script src="js/map-js.js"></script>
+    <script src="js/materialize-js.js"></script>
+    <script src="js/parsley.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
